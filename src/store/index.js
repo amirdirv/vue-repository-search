@@ -27,7 +27,9 @@ export default createStore({
   },
   actions: {
     async searchRepos({ commit, state }) {
-      if (!state.query) return
+      if (!state.query) {
+        return
+      }
       commit('SET_LOADING', true)
       try {
         const res = await axios.get(`https://api.github.com/search/repositories`, {
