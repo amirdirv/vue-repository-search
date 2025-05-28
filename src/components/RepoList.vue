@@ -1,7 +1,9 @@
 <template>
   <div class="repo-list-container">
     <div v-if="loading" class="has-text-centered mt-5">
-      <progress class="progress is-small is-primary" max="100">Loading</progress>
+      <span class="icon is-large">
+        <i class="fas fa-spinner fa-spin fa-3x"></i>
+      </span>
     </div>
     <div v-else>
       <div
