@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="app-container">
+    <div class="app-container box">
       <h1 class="title has-text-centered">Repositories</h1>
       <SearchInput />
       <RepoList />
