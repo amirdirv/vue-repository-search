@@ -1,12 +1,16 @@
 <template>
-  <nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination">
-    <button class="button is-link" @click="prevPage" :disabled="page <= 1">Prev</button>
-    <button class="button is-link ml-2" @click="nextPage" :disabled="isLastPage">Next</button>
-  </nav>
+  <div
+      v-if="!isLastPage && total > 0">
+    <nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination">
+      <button class="button is-link" @click="prevPage" :disabled="page <= 1">Prev</button>
+      <span class="pagination next">{{ page }} of {{ Math.ceil(total / perPage) }}</span>
+      <button class="button is-link ml-2" @click="nextPage" :disabled="isLastPage">Next</button>
+    </nav>
+  </div>
 </template>
 
 <script>
-import { mapState, mapMutations, mapActions } from 'vuex'
+import {mapState, mapMutations, mapActions} from 'vuex'
 
 export default {
   computed: {
