@@ -51,7 +51,7 @@ vue-repository-search/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/vue-repository-search.git
+git clone https://github.com/amirdirv/vue-repository-search.git
 cd vue-repository-search
 ```
 
