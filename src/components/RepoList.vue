@@ -9,7 +9,7 @@
       <div
           v-if="results.length !== 0">
         <div
-            class="box"
+            class="repo-box cursor-pointer"
             v-for="repo in results"
             :key="repo.id"
         >
@@ -42,5 +42,14 @@ export default {
 <style scoped>
 .repo-list-container {
   min-height: 5rem;
+  margin-top: 3rem;
+}
+.repo-box {
+  padding: 1rem;
+  border: 1px solid rgba(234, 234, 234, 0.24);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 </style>
