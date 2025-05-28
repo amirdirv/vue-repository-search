@@ -1,5 +1,6 @@
 <template>
   <div
+      class="pagination-container is-centered"
       v-if="!isLastPage && total > 0">
     <nav class="pagination is-centered mt-4" role="navigation" aria-label="pagination">
       <button class="button is-link" @click="prevPage" :disabled="page <= 1">Prev</button>
@@ -38,3 +39,15 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.pagination-container {
+  margin-top: 2rem;
+  .pagination{
+    max-width: 15rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+}
+</style>
