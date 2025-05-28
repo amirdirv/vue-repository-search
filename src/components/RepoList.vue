@@ -42,7 +42,7 @@ export default {
 <style scoped>
 .repo-list-container {
   min-height: 5rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .repo-box {
   padding: 1rem;
