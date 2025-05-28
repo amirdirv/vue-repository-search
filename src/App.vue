@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <div class="container">
+    <div class="app-container">
       <h1 class="title has-text-centered">Repositories</h1>
       <SearchInput />
       <RepoList />
@@ -22,3 +22,16 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.section {
+  padding: 2rem;
+}
+.title {
+  margin-bottom: 1.5rem;
+}
+</style>
