@@ -1,9 +1,7 @@
 <template>
   <div class="repo-list-container">
     <div v-if="loading" class="has-text-centered mt-5">
-      <span class="icon is-large">
-        <i class="fas fa-spinner fa-spin fa-3x"></i>
-      </span>
+        <font-awesome-icon icon="spinner" class="fa-spin" />
     </div>
     <div v-else>
       <div
@@ -31,8 +29,10 @@
 
 <script>
 import {mapState} from 'vuex'
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 
 export default {
+  components: {FontAwesomeIcon},
   computed: {
     ...mapState(['results', 'loading'])
   }
